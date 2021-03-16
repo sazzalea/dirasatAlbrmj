@@ -1,0 +1,1 @@
+I made this project for study by solving the Euler's problems provided by Hackerrank. Pray for me to be consistent.

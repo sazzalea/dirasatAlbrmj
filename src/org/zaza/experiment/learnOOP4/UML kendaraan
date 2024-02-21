@@ -1,0 +1,35 @@
+@startuml
+Kendaraan <|-- Mobil
+Kendaraan <|-- Motor
+Kendaraan <|-- Kuda
+
+class Kendaraan {
+  void parkir()
+}
+
+interface Bermotor {
+  void isiBensin()
+}
+
+Bermotor <|-- Mobil
+Bermotor <|-- Motor
+
+interface PelindungKepala {
+  void wajibHelm();
+}
+
+PelindungKepala <|-- Motor
+PelindungKepala <|-- Kuda
+
+class Mobil {
+  void penumpang()
+}
+
+class Motor {
+  void knalpot()
+}
+
+class Kuda {
+  void berak()
+}
+@enduml

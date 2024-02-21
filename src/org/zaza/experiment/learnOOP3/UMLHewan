@@ -1,0 +1,36 @@
+@startuml
+Hewan <|-- Kucing
+Hewan <|-- Anjing
+Hewan <|-- Burung
+Hewan <|-- Singa
+
+class Hewan {
+  berat: Integer
+  void bersuara()
+}
+
+interface Peliharaan {
+  void mainDenganAnak()
+  void dimandikan()
+}
+
+Peliharaan <|-- Kucing
+Peliharaan <|-- Anjing
+
+
+class Kucing {
+  void cakar()
+}
+
+class Anjing {
+  void rahang()
+}
+
+class Burung {
+  void paruh()
+}
+
+class Singa {
+  void surai()
+}
+@enduml
